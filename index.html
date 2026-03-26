@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="IT Support Technician portfolio - Computer repair, helpdesk, network setup, AI video creation. Open to work in Europe with visa sponsorship." />
+  <meta name="keywords"
+    content="IT Support, Helpdesk, Technician, Troubleshooting, Computer Repair, Network, Windows, Africa, Cameroon, Visa Sponsorship" />
+  <title>Leo Manfo</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- index.css -->
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <!-- Scroll progress -->
+  <div id="progress-bar"></div>
+
+  <!-- ============================================
+     NAVIGATION
+============================================ -->
+  <nav id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">&lt;<span>Leo</span>/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai-video">AI Video</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="close-menu" id="close-menu">✕</button>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#services" onclick="closeMobileMenu()">Services</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#ai-video" onclick="closeMobileMenu()">AI Video</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- ============================================
+     HERO
+============================================ -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+
+    <div class="container">
+      <div class="hero-row">
+
+        <!-- LEFT COLUMN — Text Content -->
+        <div class="hero-content">
+
+          <p class="hero-greeting">Hello, I am</p>
+
+          <h1 class="hero-name">
+            Leo <span class="highlight">Manfo</span>
+          </h1>
+
+          <p class="hero-title">
+            <span id="typed-title">IT Support Technician</span>
+            <span class="cursor-blink"></span>
+          </p>
+
+          <p class="hero-desc">
+            I fix computers, solve tech problems, and help people use technology.
+            I am looking for a <strong>junior IT job in Europe</strong> with visa sponsorship.
+            I am motivated, fast to learn, and ready to work.
+          </p>
+
+          <div class="hero-badges">
+            <div class="badge"><i class="fas fa-map-marker-alt"></i> Cameroon — Open to Europe</div>
+            <div class="badge"><i class="fas fa-briefcase"></i> Open to Work</div>
+            <div class="badge"><i class="fas fa-certificate"></i> Bachelor in IT</div>
+          </div>
+
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+            <a href="#projects" class="btn-secondary">
+              <i class="fas fa-folder-open"></i> See My Work
+            </a>
+          </div>
+
+          <div class="status-dot">Available for hire · Visa sponsorship welcome</div>
+
+        </div>
+
+        <!-- RIGHT COLUMN — 3D Stacked Cards Carousel -->
+        <div class="hero-cards-col">
+          <div class="cards-carousel" id="cardsCarousel">
+
+            <!-- Card 1: Hardware Troubleshooting -->
+            <div class="carousel-card" data-pos="0">
+              <span class="card-number">01/04</span>
+              <div class="card-inner">
+                <div class="card-icon-wrap">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <span class="card-number" style="margin-right: -11%;">Service 01</span>
+                <h3>Hardware Troubleshooting</h3>
+                <p>Identify &amp; fix hardware issues — motherboard diagnostics, RAM upgrades, HDD/SSD replacement, and
+                  component-level repairs.</p>
+                <div class="card-tag-row">
+                  <span class="card-micro-tag">DIAGNOSTICS</span>
+                  <span class="card-micro-tag">REPAIR</span>
+                  <span class="card-micro-tag">UPGRADE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Network Setup -->
+            <div class="carousel-card" data-pos="1">
+              <span class="card-number">02/04</span>
+              <div class="card-inner">
+                <div class="card-icon-wrap">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <span class="card-number" style="margin-right: -11%;">Service 02</span>
+                <h3>Network Setup</h3>
+                <p>Configure routers, LAN infrastructure, secure Wi-Fi networks, printer sharing, and firewall policies
+                  for office environments.</p>
+                <div class="card-tag-row">
+                  <span class="card-micro-tag">ROUTERS</span>
+                  <span class="card-micro-tag">LAN</span>
+                  <span class="card-micro-tag">WI-FI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Software & OS -->
+            <div class="carousel-card" data-pos="2">
+              <span class="card-number">03/04</span>
+              <div class="card-inner">
+                <div class="card-icon-wrap">
+                  <i class="fab fa-windows"></i>
+                </div>
+                <span class="card-number" style="margin-right: -11%;">Service 03</span>
+                <h3>Software &amp; OS</h3>
+                <p>Deploy and configure Windows, Linux, Microsoft Office suites, drivers, and enterprise software across
+                  workstations.</p>
+                <div class="card-tag-row">
+                  <span class="card-micro-tag">WINDOWS</span>
+                  <span class="card-micro-tag">LINUX</span>
+                  <span class="card-micro-tag">OFFICE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Remote Helpdesk -->
+            <div class="carousel-card" data-pos="3">
+              <span class="card-number">04/04</span>
+              <div class="card-inner">
+                <div class="card-icon-wrap">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <span class="card-number" style="margin-right: -11%;">Service 04</span>
+                <h3>Remote Helpdesk</h3>
+                <p>Provide responsive user support via TeamViewer &amp; AnyDesk — troubleshoot issues, guide users, and
+                  resolve tickets remotely.</p>
+                <div class="card-tag-row">
+                  <span class="card-micro-tag">TEAMVIEWER</span>
+                  <span class="card-micro-tag">ANYDESK</span>
+                  <span class="card-micro-tag">SUPPORT</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Carousel dots -->
+          <div class="carousel-dots" id="carouselDots">
+            <div class="carousel-dot active" data-index="0"></div>
+            <div class="carousel-dot" data-index="1"></div>
+            <div class="carousel-dot" data-index="2"></div>
+            <div class="carousel-dot" data-index="3"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     ABOUT
+============================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="tag">// about me</div>
+      <h2 class="section-title">Who <span>I Am</span></h2>
+      <p class="section-sub">A short introduction — who I am, what I do, and why I want to work in Europe.</p>
+
+      <div class="about-grid fade-in">
+        <!-- Avatar -->
+        <div class="about-avatar-wrapper">
+          <div class="avatar-box">
+            <div class="corner tl"></div>
+            <div class="corner tr"></div>
+            <div class="corner bl"></div>
+            <div class="corner br"></div>
+            <div class="avatar-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="avatar-name-tag">
+              <strong>Leo Manfo</strong>
+              IT Support Technician<br />Yaoundé, Cameroon 🇨🇲
+            </div>
+            <div class="otw-badge">● OPEN TO WORK</div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text">
+          <p>
+            My name is <strong>Leo Manfo</strong>. I have a <strong>Bachelor's degree in Computer Science</strong>
+            from Cameroon. I love technology and I enjoy helping people solve their computer problems.
+          </p>
+          <p>
+            I have experience in <strong>computer repair, Windows installation, network setup, and user
+              support</strong>.
+            I also use <strong>AI tools to create professional videos</strong> — this is a modern skill that many
+            companies need today.
+          </p>
+          <p>
+            I am <strong>serious, reliable, and motivated</strong>. I learn quickly.
+            My goal is to work in Europe — in Germany, France, or Belgium — and grow as an IT professional.
+            I am open to <strong>visa sponsorship</strong>.
+          </p>
+          <p>
+            Even with a basic level of English, I can communicate well in a professional environment.
+            I am also learning French (advanced) and English every day.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Computers Fixed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Motivated</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     WHY HIRE ME
+============================================ -->
+  <section id="why" class="section">
+    <div class="container">
+      <div class="tag">// why hire me</div>
+      <h2 class="section-title">Why <span>Choose Me?</span></h2>
+      <p class="section-sub">Simple reasons why I am a good choice for your IT team.</p>
+
+      <div class="why-grid">
+
+        <div class="why-card fade-in">
+          <div class="why-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Fast Problem Solver</h3>
+          <p>I fix IT problems quickly. I do not waste time. I find the solution and I do the job well.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Educated & Trained</h3>
+          <p>I have a <strong>Bachelor's degree in IT</strong>. I have good technical knowledge and practical skills.
+          </p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Modern Skills</h3>
+          <p>I use <strong>AI tools</strong> to create videos and automate tasks. I understand new technology trends.
+          </p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <h3>Good with People</h3>
+          <p>I explain things in simple words. Users trust me. I am patient and calm when people have problems.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon"><i class="fas fa-globe-europe"></i></div>
+          <h3>Ready for Europe</h3>
+          <p>I am ready to move and work in Europe. I adapt quickly to new environments and cultures.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Highly Motivated</h3>
+          <p>I want to grow, learn, and prove myself. I will work hard every day to be a valuable team member.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     SKILLS
+============================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="tag">// technical skills</div>
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <p class="section-sub">Technical skills I use every day to solve IT problems.</p>
+
+      <div class="skills-grid">
+
+        <!-- Hardware & Systems -->
+        <div class="skill-group fade-in">
+          <div class="skill-group-title"><i class="fas fa-desktop"></i> Hardware & Systems</div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-windows"></i> Windows Installation</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fab fa-windows"></i> Linux Installation</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-tools"></i> Computer Repair</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-download"></i> Software Installation</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-bug"></i> Troubleshooting</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Network & Support -->
+        <div class="skill-group fade-in">
+          <div class="skill-group-title"><i class="fas fa-network-wired"></i> Network & Support</div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-wifi"></i> WiFi Setup</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-ethernet"></i> LAN / Ethernet</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-headset"></i> User Support</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-desktop"></i> Remote Help</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Modern Tools -->
+        <div class="skill-group fade-in">
+          <div class="skill-group-title"><i class="fas fa-robot"></i> AI & Modern Tools</div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-film"></i> AI Video Creation</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-brain"></i> AI Prompting</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-photo-video"></i> Video Editing</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name"><i class="fas fa-cloud"></i> Cloud Basics</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="60"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tech tag cloud -->
+      <div class="tech-icons fade-in" style="margin-top:48px">
+        <div class="tech-icon"><i class="fab fa-windows"></i> Windows 10/11</div>
+        <div class="tech-icon"><i class="fab fa-windows"></i> Linux</div>
+        <div class="tech-icon"><i class="fas fa-shield-alt"></i> Antivirus</div>
+        <div class="tech-icon"><i class="fas fa-hdd"></i> Disk Repair</div>
+        <div class="tech-icon"><i class="fas fa-router"></i> Router Config</div>
+        <div class="tech-icon"><i class="fas fa-print"></i> Printer Setup</div>
+        <div class="tech-icon"><i class="fas fa-terminal"></i> Command Line</div>
+        <div class="tech-icon"><i class="fab fa-microsoft"></i> MS Office</div>
+        <div class="tech-icon"><i class="fas fa-magic"></i> AI Tools</div>
+        <div class="tech-icon"><i class="fas fa-video"></i> Capcut / Canva</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+     SERVICES
+============================================ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="tag">// what I can do</div>
+      <h2 class="section-title">My <span>Services</span></h2>
+      <p class="section-sub">Here is what I can do for your company. Simple and practical.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card fade-in">
+          <div class="service-icon-wrap"><i class="fas fa-tools"></i></div>
+          <h3>Computer Repair</h3>
+          <p>I fix hardware and software problems. Slow computer, broken screen, virus — I solve it.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon-wrap"><i class="fab fa-windows"></i></div>
+          <h3>Windows Install</h3>
+          <p>I install Windows 10 and 11. I set up all drivers and software. Fast and clean installation.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon-wrap"><i class="fas fa-headset"></i></div>
+          <h3>IT Support / Helpdesk</h3>
+          <p>I help users with their computer problems. Patient, clear, and professional support every time.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon-wrap"><i class="fas fa-wifi"></i></div>
+          <h3>Network Setup</h3>
+          <p>I set up WiFi, connect computers to the network, configure routers and switches.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon-wrap"><i class="fas fa-laptop-medical"></i></div>
+          <h3>Remote Assistance</h3>
+          <p>I can help users remotely using TeamViewer or AnyDesk. No need to come on-site.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon-wrap"><i class="fas fa-film"></i></div>
+          <h3>AI Video Creation</h3>
+          <p>I create professional videos using AI tools. Good for training, marketing, and presentations.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     PROJECTS
+============================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="tag">// real experience</div>
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <p class="section-sub">Real problems I solved. Real results I delivered.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-number">#001</span>
+            <span class="project-type-badge badge-green">COMPLETED</span>
+          </div>
+          <div class="project-body">
+            <h3>Office Computer Repair — 15 PCs</h3>
+            <p>
+              A small company in Yaoundé had 15 computers that were very slow and had virus problems.
+              I cleaned, repaired, and reinstalled Windows on all machines in 3 days.
+            </p>
+            <div class="project-detail">
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Removed viruses from all computers</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Reinstalled Windows 10 and all drivers</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Computers were 3x faster after the work</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> 100% of users were satisfied</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Windows 10</span>
+              <span class="project-tag">Antivirus</span>
+              <span class="project-tag">Repair</span>
+              <span class="project-tag">IT Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-number">#002</span>
+            <span class="project-type-badge badge-blue">COMPLETED</span>
+          </div>
+          <div class="project-body">
+            <h3>Network Installation — School Lab</h3>
+            <p>
+              A private school needed a network for their computer lab with 20 computers.
+              I installed the cables, configured the router, and connected all computers to the internet.
+            </p>
+            <div class="project-detail">
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Installed LAN cables and network switch</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Configured the router and firewall</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Connected 20 computers to the internet</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Set up network security and passwords</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">LAN</span>
+              <span class="project-tag">Router</span>
+              <span class="project-tag">Network</span>
+              <span class="project-tag">WiFi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-number">#003</span>
+            <span class="project-type-badge badge-green">COMPLETED</span>
+          </div>
+          <div class="project-body">
+            <h3>IT Support — NGO Office (6 months)</h3>
+            <p>
+              I worked as the IT support person for an NGO office.
+              I helped 25 employees every day with their computer and printer problems.
+            </p>
+            <div class="project-detail">
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Daily support for 25 employees</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Maintained all computers and printers</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Solved 200+ technical issues in 6 months</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Created simple IT guides for users</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Helpdesk</span>
+              <span class="project-tag">User Support</span>
+              <span class="project-tag">Maintenance</span>
+              <span class="project-tag">Printer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 — AI Video -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-number">#004</span>
+            <span class="project-type-badge badge-blue">AI PROJECT</span>
+          </div>
+          <div class="project-body">
+            <h3>AI Video — Training Series for a Company</h3>
+            <p>
+              A local company needed training videos for their employees.
+              I used AI tools to create 5 professional training videos in one week.
+            </p>
+            <div class="project-detail">
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Created 5 videos with AI voice and visuals
+              </div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Professional quality, fast delivery</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Client saved 80% compared to a studio</div>
+              <div class="detail-row"><i class="fas fa-check-circle"></i> Used Runway, CapCut, ElevenLabs</div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">AI Video</span>
+              <span class="project-tag">Runway</span>
+              <span class="project-tag">ElevenLabs</span>
+              <span class="project-tag">CapCut</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     AI VIDEO SECTION
+============================================ -->
+  <section id="ai-video" class="section">
+    <div class="container">
+      <div class="ai-showcase">
+
+        <div class="ai-text fade-in">
+          <div class="tag">// modern skill</div>
+          <h2 class="section-title">AI <span>Video Creation</span></h2>
+          <p>
+            I use Artificial Intelligence to create professional videos.
+            This is a <strong>new and valuable skill</strong> that most IT technicians do not have.
+          </p>
+          <p>
+            I can help companies create training videos, product presentations,
+            and marketing content — quickly and at low cost.
+          </p>
+
+          <div class="ai-tools">
+            <div class="ai-tool-item">
+              <div class="ai-tool-icon"><i class="fas fa-magic"></i></div>
+              <div class="ai-tool-info">
+                <strong>VEO 3.1 / Grok imagen </strong>
+                <span>AI video generation from text and images</span>
+              </div>
+            </div>
+            <div class="ai-tool-item">
+              <div class="ai-tool-icon"><i class="fas fa-microphone"></i></div>
+              <div class="ai-tool-info">
+                <strong>ElevenLabs / Gemini TTS</strong>
+                <span>Professional AI voice generation</span>
+              </div>
+            </div>
+            <div class="ai-tool-item">
+              <div class="ai-tool-icon"><i class="fas fa-cut"></i></div>
+              <div class="ai-tool-info">
+                <strong>CapCut / Canva</strong>
+                <span>Video editing and post-production</span>
+              </div>
+            </div>
+            <div class="ai-tool-item">
+              <div class="ai-tool-icon"><i class="fas fa-robot"></i></div>
+              <div class="ai-tool-info">
+                <strong>ChatGPT / Claude / Gemini</strong>
+                <span>Script writing and content creation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal visual -->
+        <div class="fade-in">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <div class="terminal-dot td-red"></div>
+              <div class="terminal-dot td-yellow"></div>
+              <div class="terminal-dot td-green"></div>
+              <span class="terminal-title">ai_video_project.sh</span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">create_video --client="Company
+                  A"</span></div>
+              <div class="t-output">→ Loading AI models...</div>
+              <div class="t-output">→ Generating script with GPT...</div>
+              <div class="t-success">✓ Script ready (450 words)</div>
+              <div class="t-line" style="margin-top:8px"><span class="t-prompt">$</span><span
+                  class="t-cmd">generate_voiceover --lang=en</span></div>
+              <div class="t-output">→ Using ElevenLabs AI voice...</div>
+              <div class="t-success">✓ Voiceover generated (2min 34s)</div>
+              <div class="t-line" style="margin-top:8px"><span class="t-prompt">$</span><span class="t-cmd">render_video
+                  --quality=4K</span></div>
+              <div class="t-output">→ VEO 3.1 or Grok rendering...</div>
+              <div class="t-output">→ Adding transitions and effects...</div>
+              <div class="t-success">✓ Video exported: training_v1.mp4</div>
+              <div class="t-line" style="margin-top:8px"><span class="t-prompt">$</span><span
+                  class="t-cmd">client_feedback</span></div>
+              <div class="t-info">★★★★★ "Perfect. Very professional!"</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     CONTACT
+============================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="tag" style="display:block; text-align:center">// contact</div>
+        <h2 class="section-title" style="text-align:center">Let's <span>Work Together</span></h2>
+        <p class="contact-intro">
+          I am ready to join your team. Send me a message and I will answer fast.
+          I am open to job offers in <strong>Germany, France, Belgium, and other European countries</strong>.
+        </p>
+
+        <div class="contact-cards fade-in">
+          <a href="mailto:lmanfo.megasoft@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+            <strong>lmanfo.megasoft@gmail.com</strong>
+          </a>
+          <a href="https://wa.me/237693699030" target="_blank" class="contact-card">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+            <strong>+237 693 699 030</strong>
+          </a>
+          <a href="https://linkedin.com/in/leomanfo" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+            <strong>Leo Manfo</strong>
+          </a>
+        </div>
+
+        <div class="cv-btn-wrap fade-in">
+          <a href="cv-leo-manfo.pdf" download class="btn-cv">
+            <i class="fas fa-file-pdf"></i>
+            Download My CV (PDF)
+          </a>
+        </div>
+
+        <div class="availability-banner fade-in">
+          <strong>✓ Available immediately</strong> · Open to full-time position ·
+          <strong>Visa sponsorship welcome</strong> · Relocation ready ·
+          <strong>Junior IT roles</strong> preferred
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     FOOTER
+============================================ -->
+  <footer>
+    <div class="container">
+      <p>
+        © 2025 <span>Leo Manfo</span> — IT Support Technician
+        &nbsp;|&nbsp; Built with ❤️ for <span>European opportunities</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+     JAVASCRIPT
+============================================ -->
+  <script src="script.js"> </script>
+
+</body>
+
+</html>
